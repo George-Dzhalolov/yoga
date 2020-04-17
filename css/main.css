@@ -1,0 +1,1125 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Muller Bold";
+  src: url(../fonts/MullerBold.ttf);
+}
+
+@font-face {
+  font-family: "Muller Light";
+  src: url(../fonts/MullerLight.ttf);
+}
+
+@font-face {
+  font-family: "Muller Light Italic";
+  src: url(../fonts/MullerLightItalic.ttf);
+}
+
+@font-face {
+  font-family: "Muller Medium";
+  src: url(../fonts/MullerMedium.ttf);
+}
+
+@font-face {
+  font-family: "Muller Regular";
+  src: url(../fonts/MullerRegular.ttf);
+}
+
+@font-face {
+  font-family: "Muller Regular Italic";
+  src: url(../fonts/MullerRegularItalic.ttf);
+}
+
+/* Слайдер */
+.instructors__slider-block.slick-slider {
+  position: relative;
+}
+
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+/* Лента слайдов */
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  background-color: transparent;
+  background: url(../img/arrowleft.png) no-repeat center;
+  font-size: 0;
+  width: 20px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  background-color: transparent;
+  background: url(../img/arrow.png) no-repeat center;
+  font-size: 0;
+  width: 20px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  right: -20px;
+}
+
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+.container {
+  max-width: 955px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url(../img/bgmain.png) no-repeat center;
+  background-size: cover;
+  padding: 20px 0 40px 0;
+}
+
+.footer__wrapper {
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__top-phone {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer__top-phone p {
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.footer__top-phone a {
+  color: #ffffff;
+  font-family: "Muller Bold";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer__center {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__center-title h1 {
+  color: #ffffff;
+  font-family: "Muller Medium";
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 230px;
+}
+
+.footer__center-title h2 {
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer__center-title p {
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.footer__center-btn {
+  width: 300px;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: #ffffff;
+  font-family: "Muller Bold";
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 100px 0 140px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.footer__center-btn:hover {
+  color: black;
+  background: white;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__center-social a {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__center-social :not(:last-child) {
+  margin-right: 10px;
+}
+
+.tour {
+  background: #f8f2e4;
+  padding: 50px 0;
+}
+
+.tour__block {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.tour__block-right {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+
+.tour__right-title {
+  color: #000000;
+  font-family: "Muller Medium";
+  font-size: 30px;
+  font-weight: 400;
+  max-width: 270px;
+}
+
+.tour__right-title span {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.tour__right-subtitle {
+  color: #000000;
+  font-family: "Muller Light";
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 392px;
+}
+
+.tour__right-row :nth-child(1) {
+  background: url(../img/t1.png) no-repeat left top;
+}
+
+.tour__right-row :nth-child(2) {
+  background: url(../img/t2.png) no-repeat left top;
+}
+
+.tour__right-row :nth-child(3) {
+  background: url(../img/t3.png) no-repeat left top;
+}
+
+.tour__row-item {
+  color: #000000;
+  font-family: "Muller Light";
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.travel {
+  padding: 80px 0;
+}
+
+.travel__title {
+  font-family: "Muller Medium";
+  font-size: 36px;
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+}
+
+.travel__title:after {
+  content: "";
+  background: url(../img/orngline.png) no-repeat;
+  width: 120px;
+  height: 6px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  margin-left: -60px;
+}
+
+.travel__rows {
+  margin-top: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.travel__rows :nth-child(4) {
+  width: 50%;
+  padding-left: 100px;
+}
+
+.travel__rows :nth-child(5) {
+  width: 50%;
+  padding-right: 100px;
+}
+
+.travel__rows-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33%;
+}
+
+.travel__item-text {
+  font-family: "Muller Regular";
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 240px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.timetable {
+  padding: 0 0 80px 0;
+}
+
+.timetable__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 100px;
+}
+
+.timetable__grid-items {
+  width: 220px;
+  height: 180px;
+  background-color: #fff8e6;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.timetable__grid-items p {
+  color: #4b4b4b;
+  font-family: "Muller Light";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.timetable__grid-items h4 {
+  font-family: "Muller Medium";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.timetable__link {
+  color: #5a56af;
+  font-family: "Muller Regular";
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline;
+  display: block;
+}
+
+.timetable__btn {
+  display: block;
+  width: 180px;
+  height: 40px;
+  border: 2px solid #e28234;
+  color: #e28234;
+  font-family: "Muller Bold";
+  font-weight: 400;
+  text-align: center;
+  padding: 12px 0 0 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.timetable__btn:hover {
+  color: white;
+  background-color: #e28234;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.ayurveda {
+  padding-bottom: 100px;
+}
+
+.ayurveda__block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ayurveda__subtitle {
+  font-family: "Muller Light";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: 110px 0 60px 0;
+}
+
+.ayurveda__text {
+  font-family: "Muller Medium";
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.ayurveda__table-item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ayurveda__table-item :not(:last-child) {
+  padding-bottom: 30px;
+}
+
+.ayurveda__table-item p {
+  font-family: "Muller Light";
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 470px;
+  margin-left: 40px;
+}
+
+.health {
+  padding: 80px 0;
+  position: relative;
+}
+
+.health:after {
+  content: "";
+  background: #f8f2e4;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.health__block {
+  position: relative;
+  z-index: 3;
+}
+
+.health__text {
+  margin-bottom: 80px;
+}
+
+.health__slider-item img {
+  margin: 0 auto;
+}
+
+.about {
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.about:after {
+  content: "";
+  width: 725px;
+  height: 270px;
+  background: #f8f2e4;
+  position: absolute;
+  z-index: 1;
+  top: -5%;
+  right: 42%;
+}
+
+.about__block {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 11;
+}
+
+.about__block-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.about__right-title h2 {
+  font-family: "Muller Medium";
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.about__right-title p {
+  color: #4b4b4b;
+  font-family: "Muller Light";
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.about__right-subtitle {
+  font-family: "Muller Light";
+  font-size: 12px;
+  font-weight: 600;
+  max-width: 465px;
+  margin-bottom: 55px;
+}
+
+.about__tables-table :not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.tables-item {
+  font-family: "Muller Light";
+  font-size: 12px;
+  font-weight: 600;
+  max-width: 200px;
+  line-height: 1.1em;
+  background: url(../img/minilogomain.png) no-repeat left top;
+  padding-left: 30px;
+}
+
+.instructors__info {
+  margin: 80px 0 100px 0;
+}
+
+.instructors__slider-top {
+  margin-bottom: 20px;
+}
+
+.instructors__bottom-slider {
+  margin-bottom: 140px;
+}
+
+.instructors__slider-name {
+  font-family: "Muller Regular";
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.instructors__slider-name span {
+  font-family: "Muller Bold";
+  font-weight: 700;
+}
+
+.instructors__slider-link {
+  color: #c94410;
+  font-family: "Muller Light";
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.instructors__slider-subtitle {
+  width: 575px;
+  color: #393939;
+  font-family: "Muller Regular Italic";
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.tourists {
+  padding: 80px 0 110px 0;
+  background: #f8f2e4;
+}
+
+.tourists__title {
+  margin-bottom: 100px;
+}
+
+.tourists__rows {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tourists__rows-item {
+  width: 33%;
+  height: 250px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tourists__rows-item:nth-child(1) {
+  padding-bottom: 40px;
+}
+
+.tourists__rows-item:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+.tourists__rows-item:nth-child(3) {
+  margin-bottom: 40px;
+}
+
+.tourists__rows-item h4 {
+  font-family: "Muller Bold";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.tourists__rows-item p {
+  font-family: "Muller Light";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  width: 200px;
+}
+
+.work {
+  padding: 80px 0;
+}
+
+.work__main-title {
+  margin-bottom: 65px;
+}
+
+.work__subtitle {
+  color: #3f3f3f;
+  font-family: "Muller Regular Italic";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.work__block-rows {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.work__rows-items {
+  width: 15%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work__rows-items:not(:first-child):after {
+  content: "";
+  background: url(../img/arroww.png) no-repeat center;
+  width: 25px;
+  height: 17px;
+  position: absolute;
+  top: 25%;
+  margin-left: -85px;
+}
+
+.work__rows-items a {
+  color: #ea7231;
+  font-family: "Muller Regular";
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 4px;
+}
+
+.work__rows-text {
+  color: #3f3f3f;
+  font-family: "Muller Regular";
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cost {
+  padding: 80px 0;
+  background: #f8f2e4;
+}
+
+.cost__block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cost__title {
+  margin-bottom: 90px;
+}
+
+.cost__contain {
+  width: 820px;
+  height: 100%;
+  background: #ffffff;
+}
+
+.cost__center-text {
+  font-family: "Muller Light";
+  font-weight: 600;
+  line-height: 48px;
+  width: 540px;
+  font-size: 20px;
+}
+
+.cost__wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 50px 18px 50px;
+}
+
+.cost__span-left {
+  font-family: "Muller Bold";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 48px;
+}
+
+.cost__contain-bottom {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 18px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f4e1b6;
+}
+
+.cost__bottom-text {
+  font-family: "Muller Medium";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cost__btn {
+  width: 140px;
+  height: 40px;
+}
+
+.cost__info-title {
+  font-family: "Muller Medium";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: center;
+  margin: 20px 0 15px 0;
+}
+
+.cost__info-item {
+  color: #4e4e4e;
+  font-family: "Muller Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.cost__info-item:before {
+  content: "";
+  background: url(../img/orngarrow.png) no-repeat left;
+  padding-right: 35px;
+}
+
+.cost__not-table {
+  padding-left: 25px;
+  margin-bottom: 45px;
+}
+
+.cost__not-item {
+  color: #4e4e4e;
+  font-family: "Muller Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.cost__not-item:before {
+  content: "";
+  padding-left: 35px;
+  background: url(../img/nott.png) no-repeat left;
+}
+
+.cost__not-text {
+  font-family: "Muller Regular";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 735px;
+}
+
+.cost__contain-middle p {
+  color: #dd490f;
+  font-family: "Muller Light";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.cost__contain-middle p span {
+  font-family: "Muller Bold";
+  font-weight: 700;
+}
+
+.doc {
+  padding: 80px 0;
+}
+
+.doc__title {
+  margin-bottom: 100px;
+}
+
+.doc__info-text {
+  font-family: "Muller Light Italic";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.doc__rows {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.doc__rows-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.doc__rows-item p {
+  font-family: "Muller Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.5em;
+}
+
+.map {
+  padding: 50px 0;
+  background: #fcf9f1;
+}
+
+.map__title {
+  font-family: "Muller Medium";
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.map__contacts {
+  max-width: 550px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.map__social-title {
+  font-family: "Muller Medium";
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.map__social-icon {
+  width: 160px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map__social-icon a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #e28234;
+}
+
+.map__tel-number p {
+  font-family: "Muller Light Italic";
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.map__tel-number a {
+  font-family: "Muller Bold";
+  font-size: 28px;
+  font-weight: 400;
+  color: black;
+}
+
+.map__maps {
+  max-width: 620px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.map__left p {
+  font-family: "Muller Regular";
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.map__box {
+  border: 2px solid black;
+  width: 204px;
+}
+
+.header {
+  padding: 15px 0;
+  background: #383838;
+}
+
+.header__block {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__left {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__left-text {
+  margin-left: 40px;
+  color: white;
+}
+
+.header__left-text a {
+  font-family: "Muller Bold";
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: white;
+}
+
+.header__left-text p {
+  font-family: "Muller Regular";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.header__right {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 395px;
+}
+
+.header__right-title {
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.header__m-bottom {
+  margin-bottom: 5px;
+}
